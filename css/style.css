@@ -295,11 +295,17 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background:rgb(107, 113, 131);
+    background:rgb(35, 36, 38);
 }
 
-.menu .box-container .box:hover > *{
-    color:var(--black);
+.productbtn:hover {
+    background-color: #405748;
+    color: rgb(255, 255, 255);
+}
+
+.productbtn1:hover {
+    background-color: #adefc3;
+    color: rgb(0, 0, 0);
 }
 
 .products .box-container{
