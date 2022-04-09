@@ -22,6 +22,7 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
+    max-width: 100%;
 }
 
 html::-webkit-scrollbar{
@@ -39,6 +40,8 @@ html::-webkit-scrollbar-thumb{
 
 body{
     background: var(--bg);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 section{
@@ -299,11 +302,6 @@ section{
 }
 
 .productbtn:hover {
-    background-color: #405748;
-    color: rgb(255, 255, 255);
-}
-
-.productbtn1:hover {
     background-color: #adefc3;
     color: rgb(0, 0, 0);
 }
