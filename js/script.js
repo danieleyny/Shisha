@@ -28,7 +28,7 @@ window.onscroll = () =>{
     cartItem.classList.remove('active');
 }
 
-
+ 
 
 
 
@@ -48,6 +48,14 @@ function search_products() {
   }
 
 
-  
 
-  
+
+
+  var input = document.getElementsByClassName("searchbar");
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("products").scrollIntoView();
+    }
+  });
+
