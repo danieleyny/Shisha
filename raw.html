@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw Products</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="shortcut icon" href="/images/Screen Shot 2022-04-08 at 2.55.51 PM.png" type="image/x-icon">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+     <a href="#" class="logo">
+        <img src="images/Screen_Shot_2022-04-08_at_2.55.51_PM-removebg-preview.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="#projects">Instructions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <a href="#products"><label style="margin-left: 10px;" for="search-box" class="fas fa-search"></label></a>
+        <input id="searchbar" onkeyup="search_products()" type="text"
+        name="search" placeholder="Search Products">
+    </div>
+
+    <div class="cart-items-container">
+        <form action="">
+            <h3 class="cart-title">Place Your Order</h3>
+
+            
+            <div class="inputBox cart-item cart-line">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox cart-item cart-line">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox cart-item cart-line">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="Number">
+            </div>
+            <div class="inputBox cart-item cart-line">
+                <span class="fas fa-shopping-cart"></span>
+                <textarea type="text" placeholder="Order List    (Ex - 1x Mini Myle Pink Lemonade, 2x Puff XXL Sour Apple)"></textarea>
+            </div>
+            <input type="submit" value="Submit Order" class="btn">
+        </form>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+<!-- menu section ends -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Raw <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons"> 
+                <a href="#contact" class="fas fa-shopping-cart"></a>
+                <div class="popup" onclick="myPopupting()">
+                    <span class="popuptext" id="myPopup">RAW Pipe Cleaners are naturally strong and absorbent and wrapped around a flexible banded iron core. These are the natural way to clean your pipe or rig! A RAW Innovation!</span>
+                <a class="fas fa-info">
+                  </a></div>
+            </div>
+            <div class="image imgzoom">
+                <img src="images/Raw/RawPipeCleaners copy.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Raw Pipe Cleaners</h3>
+                <div class="stars products-amount">
+                    <p>24 Per/ Box</p>
+                </div>
+                <div class="price">$25.99</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons"> 
+                <a href="#contact" class="fas fa-shopping-cart"></a>
+                <div class="popup" onclick="myPopupting1()">
+                    <span class="popuptext" id="myPopup1">RAW Black 1¼ is so thin that it allows you to truly taste your terps! RAW Black was created for a new generation as the next level of top shelf smoking materials. It’s like a Ferrari, it only runs on premium gas!</span>
+                <a class="fas fa-info">
+                  </a></div>
+            </div>
+            <div class="image imgzoom">
+                <img src="images/Raw/RawBlackRollingPaper copy.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Raw Black Rolling Paper</h3>
+                <div class="stars products-amount">
+                    <p>50 Per/ Box</p>
+                </div>
+                <div class="price">$80</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons"> 
+                <a href="#contact" class="fas fa-shopping-cart"></a>
+                <div class="popup" onclick="myPopupting2()">
+                    <span class="popuptext" id="myPopup2">RAW Classic Kingsize Cones are as easy as it gets! RAW’s precision-crafted pre-rolled cones are made from the same truly naturally unbleached paper as RAW Classic Papers and are ready to be easily filled. We are proud to say that RAW Rolling Papers have no added chalk or dyes! RAW paper is made from natural plants with zero burn additives.</span>
+                <a class="fas fa-info">
+                  </a></div>
+            </div>
+            <div class="image imgzoom">
+                <img src="images/Raw/RawCone copy.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Raw Cones</h3>
+                <div class="stars products-amount">
+                    <p>32 Per/ Box</p>
+                </div>
+                <div class="price">$96</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons"> 
+                <a href="#contact" class="fas fa-shopping-cart"></a>
+                <div class="popup" onclick="myPopupting3()">
+                    <span class="popuptext" id="myPopup3">This RAW 2-Way Hemp Plastic Roller can roll standard or FAT rolls and is made using a specially produced natural hemp composite plastic that is then formed through an innovative eco-friendly cold-injection process. Even our rolling aprons use double-thick, high tensile strength vinyl. RAW 2-Way Hemp Plastic Rollers are designed to last!</span>
+                <a class="fas fa-info">
+                  </a></div>
+            </div>
+            <div class="image imgzoom">
+                <img src="images/Raw/Raw2Roller copy.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Raw 2 Roller</h3>
+                <div class="stars products-amount">
+                    <p>12 Per/ Box</p>
+                </div>
+                <div class="price">$120</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons"> 
+                <a href="#contact" class="fas fa-shopping-cart"></a>
+                <div class="popup" onclick="myPopupting4()">
+                    <span class="popuptext" id="myPopup4">RAW Hemp Wick is a natural alternative to butane lighters and matches. Hemp and beeswax are two primal renewable resources. Made in Poland. To use, simply light end and tilt up or down to control flame.</span>
+                <a class="fas fa-info">
+                  </a></div>
+            </div>
+            <div class="image imgzoom">
+                <img src="images/Raw/RawHempWick copy.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Raw Pipe Cleaners</h3>
+                <div class="stars products-amount">
+                    <p>40 Per/ Box</p>
+                </div>
+                <div class="price">$80</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons"> 
+                <a href="#contact" class="fas fa-shopping-cart"></a>
+                <div class="popup" onclick="myPopupting5()">
+                    <span class="popuptext" id="myPopup5">RAW Organic Hemp Kingsize Slim is for those of us that like bigger smokes. It’s 110mm long and about the same height as a 1¼ paper. RAW Organic Hemp Kingsize Slim is absolutely perfect because it rolls a nice long smoke yet doesn’t have too much leftover paper width like older king sizes (if you smoked the outdated regular kingsize you know why slim took over!)</span>
+                <a class="fas fa-info">
+                  </a></div>
+            </div>
+            <div class="image imgzoom">
+                <img src="images/Raw/RawRollingPaper copy.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Raw Rolling Paper</h3>
+                <div class="stars products-amount">
+                    <p>50 Per/ Box</p>
+                </div>
+                <div class="price">$25</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Steps Section -->
+<section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="heading"> How To <span>Purchase</span> </h1>
+    </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Step 1</h1>
+            <h2>Create A Customer Account</h2>
+            <p>To begin placing an order you must reach out to us to verify store information and to create a customer account with your card or payment method on file. The process will be fast and a one time thing, once you are set up you will be able to continnue with the purchasing process. </p>
+          </div>
+          <div class="project-img">
+            <img src="./images/handshake-steps1.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Step 2</h1>
+            <h2>Search Products</h2>
+            <p>Go through our website to view all of the available products that we currently have. You may do so by visiting our home site and scrolling down to the products section. From there, click the collection that you are interested in and you will be taken to a products page where you will see all of the products that match the selected category. The page will include the available products as well as a product description, price per box, and how many of the items come per order./p>
+          </div>
+          <div class="project-img">
+            <img src="./images/man-scrolling-steps4.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Step 3</h1>
+            <h2>List Chosen Items</h2>
+            <p>Once you know which products you want, either go down to the contact section or click the cart icon on the top right. Once done so fill out the requested information and then in the 'Order List' section begin to list the names of the products that you want along with the amount of the item that you want. For example if you want two boxes of myle pink lemonade and a puff plus sour apple then you would put the order list as "2x - Myle Pink Lemonade, 1x - Puff XXL Sour Apple."</p>
+          </div>
+          <div class="project-img">
+            <img src="./images/orderscreenshot9.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Step 4</h1>
+            <h2>Submit Order & Pay</h2>
+            <p>Submit your order with the filled out information. Double check that the information that you entered is correct and that the products in the order list are the products that you want. From there once the order is placed, the payment method that we have on file will be used to pay for the order. We will then reach out to you to verify your order, purchase, and store location, and once confirmed the products will be delivered to your address. </p>
+          </div>
+          <div class="project-img">
+            <img src="./images/payment-steps2.jpeg" alt="img">
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+ <!-- End Steps Section -->
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1152%20Bronx%20River%20Ave,%20Bronx,%20NY%2010472&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google map widget for website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>       
+         <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-map"></span>
+                <input type="text" placeholder="Store Address">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="Number">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-shopping-cart"></span>
+                <input type="text" placeholder="Order List / Message / Question">
+            </div>
+            <input type="submit" value="Contact Now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+<!-- contact section ends -->
+<br/><br/><br/><br/><br/><br/>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#projects">Instructions</a>
+        <a href="index.html#review">Review</a>
+        <a href="#contact">Contact</a>
+        <a href="index.html#blogs">Blogs</a>
+    </div>
+
+    <div class="credit">created by <span>Eyny LLC</span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

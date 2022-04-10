@@ -89,8 +89,8 @@ section{
 }
 
 .header .navbar a{
-    margin:0 1rem;
-    font-size: 1.6rem;
+    margin:0 3rem;
+    font-size: 2.2rem;
     color:#fff;
 }
 
@@ -149,6 +149,24 @@ section{
 
 .header .search-form label:hover{
     color:var(--main-color);
+}
+
+.cart-title {
+    margin-top: 15px;
+    font-size: 26px;
+    color: #6e987c;
+}
+
+.cart-line {
+    border-top: .1px solid rgb(161, 159, 159);
+    border-bottom: .1px solid rgb(161, 159, 159);
+    margin: 15px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+textarea {
+    width: 100%;
 }
 
 .header .cart-items-container{
@@ -300,6 +318,15 @@ section{
     background:rgb(35, 36, 38);
 }
 
+/* Product Section  */
+
+.products-amount{
+    color: rgb(170, 167, 167);
+    font-size: 21px;
+    
+}
+
+
 .productbtn:hover {
     background-color: #adefc3;
     color: rgb(0, 0, 0);
@@ -363,6 +390,156 @@ section{
     font-weight: lighter;
     font-size: 1.5rem;
 }
+
+
+
+            /* Popup container */
+            .popup {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+            }
+            
+            /* The actual popup (appears on top) */
+            .popup .popuptext {
+                visibility: hidden;
+                width: 300px;
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 8px 0;
+                position: absolute;
+                z-index: 1;
+                bottom: -740%;
+                left: 50%;
+                margin-left: -180px;
+                height: 400px;
+                font-size: 18px;
+                padding: 50%;
+            }
+            
+            
+            
+            /* Toggle this class when clicking on the popup container (hide and show the popup) */
+            .popup .show {
+                visibility: visible;
+                -webkit-animation: fadeIn 1s;
+                animation: fadeIn 1s
+            }
+            
+            /* Add animation (fade in the popup) */
+            @-webkit-keyframes fadeIn {
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
+            
+            @keyframes fadeIn {
+                from {opacity: 0;}
+                to {opacity:1 ;}
+            }
+/* Product Section End */
+
+
+/* Projects Section */
+
+
+.projects-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#projects .projects-header h1{
+ margin-bottom: 50px;
+}
+
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+#projects .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    font-size: 16px;
+    font-weight: 200;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+}
+
+#projects .project-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#projects .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    
+}
+#projects .project-info p{
+    color: white;
+}
+#projects .project-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#projects .project-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .6;
+}
+#projects .project-img img{
+    transition: .3s ease transform;
+}
+#projects .project-item:hover .project-img img{
+    transform: scale(1.1);
+}
+
+.imgzoom:hover {
+transform: scale(1.15);   
+}
+/* End Projects Section */
+
+
 
 .review .box-container{
     display: grid;
@@ -587,7 +764,37 @@ section{
 
 }
 
+@media only screen and (min-width:768px){
+
+/* Project */
+#projects .project-item {
+    flex-direction: row;
+}
+#projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+#projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+#projects .all-projects .project-info {
+    height: 100%;
+}
+#projects .all-projects .project-img {
+    height: 100%;
+}
+/* End Project */
+
+}
+
+
+
 @media (max-width:768px){
+
+
+    
 
     #menu-btn{
         display: inline-block;

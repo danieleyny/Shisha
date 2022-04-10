@@ -49,13 +49,40 @@ function search_products() {
 
 
 
+// When the user clicks on <div>, open the popup
+function myPopupting() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
 
 
-  var input = document.getElementsByClassName("searchbar");
-  input.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-     event.preventDefault();
-     document.getElementById("products").scrollIntoView();
-    }
-  });
+function myPopupting1() {
+    var popup = document.getElementById("myPopup1");
+    popup.classList.toggle("show");
+}
+
+
+function myPopupting2() {
+    var popup = document.getElementById("myPopup2");
+    popup.classList.toggle("show");
+}
+
+
+function myPopupting3() {
+    var popup = document.getElementById("myPopup3");
+    popup.classList.toggle("show");
+}
+
+
+function myPopupting4() {
+    var popup = document.getElementById("myPopup4");
+    popup.classList.toggle("show");
+}
+
+
+function myPopupting5() {
+    var popup = document.getElementById("myPopup5");
+    popup.classList.toggle("show");
+}
+
 
