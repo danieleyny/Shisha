@@ -85,6 +85,36 @@ function myPopupting5() {
     popup.classList.toggle("show");
 }
 
+function myPopupting6() {
+    var popup = document.getElementById("myPopup6");
+    popup.classList.toggle("show");
+}
+
+function myPopupting7() {
+    var popup = document.getElementById("myPopup7");
+    popup.classList.toggle("show");
+}
+
+function myPopupting8() {
+    var popup = document.getElementById("myPopup8");
+    popup.classList.toggle("show");
+}
+
+function myPopupting9() {
+    var popup = document.getElementById("myPopup9");
+    popup.classList.toggle("show");
+}
+
+function myPopupting10() {
+    var popup = document.getElementById("myPopup10");
+    popup.classList.toggle("show");
+}
+
+function myPopupting11() {
+    var popup = document.getElementById("myPopup11");
+    popup.classList.toggle("show");
+}
+
 
 
 
@@ -108,7 +138,12 @@ const elements = [
  document.getElementById("myDropdown4"),
  document.getElementById("myDropdown5"),
  document.getElementById("myDropdown6"),
- document.getElementById("myDropdown7")
+ document.getElementById("myDropdown7"),
+ document.getElementById("myDropdown8"),
+ document.getElementById("myDropdown9"),
+ document.getElementById("myDropdown10"),
+ document.getElementById("myDropdown11"),
+ document.getElementById("myDropdown12"),
 ]
 
 function DropDownMenu(){ elements[0].classList.toggle("show")} 
@@ -119,6 +154,11 @@ function DropDownMenu4(){ elements[4].classList.toggle("show")}
 function DropDownMenu5(){ elements[5].classList.toggle("show")} 
 function DropDownMenu6(){ elements[6].classList.toggle("show")} 
 function DropDownMenu7(){ elements[7].classList.toggle("show")} 
+function DropDownMenu8(){ elements[8].classList.toggle("show")} 
+function DropDownMenu9(){ elements[9].classList.toggle("show")} 
+function DropDownMenu10(){ elements[10].classList.toggle("show")} 
+function DropDownMenu11(){ elements[11].classList.toggle("show")} 
+function DropDownMenu12(){ elements[12].classList.toggle("show")} 
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = (event) => {                 //  <--- JS ES6 arrow function
